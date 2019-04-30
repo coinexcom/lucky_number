@@ -7,7 +7,7 @@ import random
 
 def main(seeds, start_num, end_num, count):
     results = set()
-    random.seed(seeds)
+    random.seed(int(seeds, 16))
     while len(results) < count:
         r = random.randint(start_num, end_num)
         results.add(r)
